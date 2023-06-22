@@ -1,0 +1,14 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.background-circles {
+    width: 200px;
+    height: 200px; 
+    background: rgb(241,79,150);
+background: linear-gradient(231deg, rgba(241,79,150,1) 1%, rgba(195,140,227,1) 37%, rgba(91,214,200,1) 67%);
+border-radius: 5px;
+}
