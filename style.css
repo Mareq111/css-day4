@@ -1,14 +1,105 @@
-
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
+
 .background-circles {
-    width: 200px;
-    height: 200px; 
-    background: rgb(241,79,150);
-background: linear-gradient(231deg, rgba(241,79,150,1) 1%, rgba(195,140,227,1) 37%, rgba(91,214,200,1) 67%);
-border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  background: rgb(241, 79, 150);
+  background: linear-gradient(
+    231deg,
+    rgba(241, 79, 150, 1) 1%,
+    rgba(195, 140, 227, 1) 37%,
+    rgba(91, 214, 200, 1) 67%
+  );
+  border-radius: 5px;
+}
+
+.big-circle {
+  height: 80px;
+  width: 80px;
+  background-color: #f3f0ed;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+  animation: big-bounce 5s ease-in infinite alternate;
+  animation-fill-mode: both;
+}
+
+.medium-circle {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #f3f0ed;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.15);
+  animation: medium-bounce 5s ease-in infinite alternate;
+  animation-fill-mode: both;
+}
+
+.small-circle {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: #f3f0ed;
+  border-radius: 50%;
+  z-index: 3;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15);
+  animation: small-bounce 5s ease-in infinite alternate;
+  animation-fill-mode: both;
+}
+
+/* big-bounce for big circle */
+
+@keyframes big-bounce {
+  0% {
+    transform: scale(0);
+  }
+
+  10% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* medium-bounce for medium circle */
+
+@keyframes medium-bounce {
+  0% {
+    transform: scale(0);
+  }
+
+  40% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* small-bounce for small circle */
+
+@keyframes small-bounce {
+  0% {
+    transform: scale(0);
+  }
+
+  70% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
